@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for k in usr %}
+    {{ k.user.username }}
+    {{ k.user.first_name }}
+    {{ k.user.last_name }}
+    {{ k.user.email }}<br>
+    {{ k.department }}<br>
+    <img src="{{ k.image.url }}" width="60px" height="60px" ><br>
+{% endfor %}
+
+</body>
+</html>
